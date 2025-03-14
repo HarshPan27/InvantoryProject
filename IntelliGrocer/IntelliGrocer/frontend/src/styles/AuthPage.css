@@ -1,0 +1,195 @@
+.auth-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Left Section - Branding */
+.auth-left {
+  flex: 1;
+  background: url("https://www.oswegohotelvictoria.com/wp-content/uploads/2023/11/little-gem-grocery-victoria-bc-oswego.jpg") center/cover no-repeat;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+/* IntelliGrocer Branding */
+.brand-title {
+  font-size: 4rem;
+  font-weight: 700;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(39, 174, 96, 0.9); /* Stronger Green */
+  color: white;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Brand Subtitle */
+.brand-subtitle {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+/* Right Section - Form */
+.auth-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ecf0f1;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 380px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Fields & Select */
+input, select {
+  margin: 10px 0;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 2px solid #27ae60;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: #145a32;
+}
+
+/* Button */
+button {
+  margin-top: 15px;
+  padding: 14px;
+  background-color: #27ae60;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #219150;
+  transform: scale(1.05);
+}
+
+/* Toggle Text */
+.toggle-text {
+  margin-top: 15px;
+  color: #2c3e50;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+/* Toggle Options: Arrange links in one line */
+.toggle-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;  /* Adjust spacing between items as needed */
+  margin-top: 15px;
+}
+
+/* Optionally remove extra margins from individual toggle-text elements */
+.toggle-text {
+  margin: 0;
+  color: #2c3e50;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+/* Terms & Conditions */
+.terms {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-top: 15px;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.terms input {
+  margin-right: 10px;
+}
+
+/* Terms Clickable Text */
+.clickable-text {
+  color: #145a32;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.clickable-text:hover {
+  color: #0e5029;
+  transform: scale(1.08);
+}
+@media (max-width: 768px) {
+  .auth-container {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .auth-left, .auth-right {
+    border-radius: 0;
+    width: 100%;
+  }
+  
+  .auth-left {
+    height: 40vh; /* Adjust the height for the branding section */
+    padding: 20px;
+  }
+  
+  .auth-right {
+    padding: 15px;
+  }
+  
+  form {
+    width: 90%;
+    max-width: none;
+    padding: 20px;
+  }
+  
+  .brand-title {
+    font-size: 2.5rem;
+    padding: 15px;
+  }
+  
+  .brand-subtitle {
+    font-size: 1.2rem;
+    padding: 8px 16px;
+  }
+  
+  .toggle-text {
+    font-size: 1rem;
+  }
+}
